@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Виктор Баранов](https://up.htmlacademy.ru/adaptive/11/user/320609).
-* Наставник: `Неизвестно`.
+* Наставник: [Никита Рогатнев](https://up.htmlacademy.ru/adaptive/11/user/86119).
 
 ---
 
