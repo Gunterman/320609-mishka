@@ -8,29 +8,26 @@
     <header class="page-header">
       <h2 class="page-header__title">"Мишка" - милые штуки ручной работы для дома</h2>
       <div class="page-header__logo">
-        <img src="http://placehold.it/150x100" width="150" height="150" alt="Мишка">
+        <a><img src="http://placehold.it/150x100" width="150" height="150" alt="Мишка"></a>
       </div>
       <nav class="main-nav">
         <span class="main-nav__toogler"></span>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="#">Каталог товаров</a>
+              <a href="catalog.html">Каталог товаров</a>
               <ul class="main-nav__list-lvl-2">
-                <li class="main-nav__item"><a href="#">Новые поступления</a></li>
-                <li class="main-nav__item"><a href="#">Распродажа</a></li>
+                <li class="main-nav__item-lvl-2"><a href="#">Новые поступления</a></li>
+                <li class="main-nav__item-lvl-2"><a href="#">Распродажа</a></li>
               </ul>
             </li>
-            <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
+            <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
           </ul>
-          <div class="main-nav__user">
-            <form class="main-nav__search" action="https://echo.htmlacademy.ru" method="get">
-              <input type="search" name="search" placeholder="Поиск по сайту">
-              <input type="submit">
-            </form>
-            <a href="#" class="main-nav__currently-select" title="Корзина">Корзина: пока пуста</a>
-            <span class="main-nav__delivery">Бесплатная доставка по России</span>
-          </div>
+          <ul class="main-nav__user">
+            <li class="main-nav__item main-nav__item--search"><a href="#" title="Поиск по сайту">Поиск по сайту</a></li>
+            <li class="main-nav__item main-nav__item--currently-select"><a href="#">Корзина: пока пуста</a></li>
+            <li class="main-nav__item main-nav__item--delivery">Бесплатная доставка по России</li>
+          </ul>
         </div>
       </nav>
     </header>
@@ -70,7 +67,7 @@
           </div>
           <div class="product__purchase">
             <p class="product__price">Цена: 990 руб.</p>
-            <a class="product__buy-btn btn" href="#">Заказать</a>
+            <button class="product__buy-btn btn" type="button">Заказать</button>
           </div>
         </article>
       </div>
@@ -119,7 +116,7 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__logo page-footer__logo--hidden">
-          <img src="http://placehold.it/150x100" width="150" height="150" alt="Мишка">
+          <a><img src="http://placehold.it/150x100" width="150" height="150" alt="Мишка"></a>
         </div>
         <div class="page-footer__social">
           <a class="social‐link social‐link‐‐in" href="https://www.instagram.com">Мы в Инстаграме</a>
@@ -132,5 +129,22 @@
         </div>
       </div>
     </footer>
+    <section class="modal-size-selector">
+      <div class="modal-size-selector__wrapper">
+        <h2 class="modal-size-selector__title">Добавить в корзину</h2>
+        <form class="modal-size-selector__form" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="modal-size-selector__field">
+            <legend class="modal-size-selector__name">Выберите размер:</legend>
+            <label for="small">s</label>
+            <input type="radio" name="size" value="s" id="small">
+            <label for="medium">m</label>
+            <input type="radio" name="size" value="m" id="medium">
+            <label for="large">l</label>
+            <input type="radio" name="size" value="l" id="large">
+            <button class="modal-size-selector__btn btn" type="submit">Добавить</button>
+          </fieldset>
+        </form>
+      </div>
+    </section>
   </body>
 </html>
