@@ -6,12 +6,11 @@
   </head>
   <body>
     <header class="page-header">
-      <h2 class="page-header__title">"Мишка" - милые штуки ручной работы для дома</h2>
       <div class="page-header__logo">
         <a href="index.html"><img src="http://placehold.it/150x100" width="150" height="150" alt="Мишка"></a>
       </div>
+      <span class="main-nav__toogler"></span>
       <nav class="main-nav">
-        <span class="main-nav__toogler"></span>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
@@ -22,8 +21,6 @@
               </ul>
             </li>
             <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
-          </ul>
-          <ul class="main-nav__user">
             <li class="main-nav__item main-nav__item--search"><a href="#" title="Поиск по сайту">Поиск по сайту</a></li>
             <li class="main-nav__item main-nav__item--currently-select"><a href="#">Корзина: пока пуста</a></li>
             <li class="main-nav__item main-nav__item--delivery">Бесплатная доставка по России</li>
@@ -39,56 +36,56 @@
         <p class="page-form__descr">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <fieldset class="page-form__type">
           <legend class="page-form__title">Тип</legend>
-          <p class="page-form__type-select">
+          <div class="page-form__type-select">
             <input type="radio" name="type" value="accessories" id="type-accessories">
             <label for="type-accessories">Аксессуары для интерьера</label>
-          </p>
-          <p class="page-form__type-select">
+          </div>
+          <div class="page-form__type-select">
             <input type="radio" name="type" value="toys" id="type-toys">
             <label for="type-toys">Детская игрушка</label>
-          </p>
+          </div>
         </fieldset>
         <fieldset class="page-form__color">
           <legend class="page-form__title">Цвет</legend>
-          <p class="page-form__color-select">
+          <div class="page-form__color-select">
             <input type="checkbox" name="white" id="white-color">
             <label for="white-color">Белый</label>
-          </p>
-          <p class="page-form__color-select">
+          </div>
+          <div class="page-form__color-select">
             <input type="checkbox" name="grey" id="grey-color">
             <label for="grey-color">Серый</label>
-          </p>
-          <p class="page-form__color-select">
+          </div>
+          <div class="page-form__color-select">
             <input type="checkbox" name="tiffany" id="tiffany-color">
             <label for="tiffany-color">Тиффани</label>
-          </p>
-          <p class="page-form__color-select">
+          </div>
+          <div class="page-form__color-select">
             <input type="checkbox" name="black" id="black-color">
             <label for="black-color">Черный</label>
-          </p>
-          <p class="page-form__color-select">
+          </div>
+          <div class="page-form__color-select">
             <input type="checkbox" name="pink" id="pink-color">
             <label for="pink-color">Розовый</label>
-          </p>
-          <p class="page-form__color-select">
+          </div>
+          <div class="page-form__color-select">
             <input type="checkbox" name="orange" id="orange-color">
             <label for="orange-color">Оранжевый</label>
-          </p>
+          </div>
         </fieldset>
         <fieldset class="page-form__id">
           <legend class="page-form__title">Фио</legend>
-          <p class="page-form__name">
+          <div class="page-form__name">
             <label for="name">Имя:</label>
             <input type="text" id="name" placeholder="Введите ваше имя*">
-          </p>
-          <p class="page-form__name">
-            <label for="surname">Имя:</label>
+          </div>
+          <div class="page-form__name">
+            <label for="surname">Фамилия:</label>
             <input type="text" id="surname" placeholder="Укажите фамилию*">
-          </p>
-          <p class="page-form__name">
-            <label for="patronymic">Имя:</label>
+          </div>
+          <div class="page-form__name">
+            <label for="patronymic">Отчество:</label>
             <input type="text" id="patronymic" placeholder="Отчество, если желаете">
-          </p>
+          </div>
         </fieldset>
         <fieldset class="page-form__contacts">
           <label for="phone-number" class="page-form__title">Тел</label>
@@ -100,7 +97,7 @@
           <label for="letter" class="page-form__title">Текст письма:</label>
           <textarea id="letter" name="your-letter" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </fieldset>
-        <small class="page-form__required">*Поля обязательны для заполнения</small>
+        <span class="page-form__required"><sup>*</sup>Поля обязательны для заполнения</span>
         <button class="page-form__btn btn" type="submit">Отправить заказ</button>
       </form>
     </main>
@@ -115,7 +112,7 @@
           <a class="social‐link social‐link‐‐tw" href="https://www.twitter.com">Мы в Фейсбуке</a>
         </div>
         <div class="page‐footer__copyright">
-          Разработано
+          <span class="page‐footer__copyright-title">Разработано</span>
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">htmlacademy</a>
         </div>
       </div>
