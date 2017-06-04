@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/normalize.css">
   </head>
   <body>
     <header class="page-header">
@@ -136,11 +135,11 @@
         <form class="modal-size-selector__form" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="modal-size-selector__field">
             <legend class="modal-size-selector__name">Выберите размер:</legend>
-            <label for="small">s</label>
+            <label class="modal-size-selector__size" for="small">s</label>
             <input type="radio" name="size" value="s" id="small">
-            <label for="medium">m</label>
+            <label class="modal-size-selector__size" for="medium">m</label>
             <input type="radio" name="size" value="m" id="medium">
-            <label for="large">l</label>
+            <label class="modal-size-selector__size" for="large">l</label>
             <input type="radio" name="size" value="l" id="large">
             <button class="modal-size-selector__btn btn" type="submit">Добавить</button>
           </fieldset>

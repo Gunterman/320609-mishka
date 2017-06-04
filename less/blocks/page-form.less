@@ -1,25 +1,24 @@
 .page-form {
-  font-family: @text-font-family;
+  font-family: @main-font;
 }
 
 .page-form__descr {
-  .form-paragraph-font();
+  .regular-fonts(13px; 24px; @main-gray);
 }
 
 .page-form__title {
-  .form-title();
+  .bold-fonts(17px; 16px; @main-green);
+  text-transform: uppercase;
 }
 
 .page-form__label {
-  .label-title();
+  .bold-fonts(17px; 18px; @black);
 }
 
 .page-form__required {
-  font-size: 14px;
-  line-height: 16px;
-  color: #444444;
+  .regular-fonts(14px; 16px; @main-gray);
 }
 
 .page-form__btn {
-  .btn-fonts();
+  .bold-fonts(17px; 16px; @black);
 }

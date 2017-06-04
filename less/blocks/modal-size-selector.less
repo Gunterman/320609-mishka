@@ -1,12 +1,17 @@
 .modal-size-selector {
-  font-family: @text-font-family;
+  font-family: @main-font;
 }
 
 .modal-size-selector__title {
-  .title-font();
+  .bold-fonts(25px; 30px; @black);
   text-transform: uppercase;
 }
 
 .modal-size-selector__name {
-  .paragraph-font();
+  .regular-fonts(15px; 30px; @main-gray);
+}
+
+.modal-size-selector__size {
+  .bold-fonts(17px; 16px; @main-gray);
+  text-transform: uppercase;
 }
