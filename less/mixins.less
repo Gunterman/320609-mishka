@@ -12,3 +12,39 @@
   line-height: @line-height;
   color: @color;
 }
+
+.container() {
+  width: 320px;
+  margin: 0 auto;
+
+  @media @tablet-width {
+    width: 668px;
+  }
+
+  @media @desktop-width {
+    width: 1050px;
+  }
+}
+
+.absolute-center() {
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  margin: auto;
+}
+
+.no-outline() {
+  outline: 2px solid red;
+}
+
+.visually-hidden() {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

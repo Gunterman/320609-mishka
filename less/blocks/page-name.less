@@ -1,8 +1,48 @@
 .page-name {
   font-family: @main-font;
   background-color: @bg-gray;
+  padding-top: 70px;
+  padding-bottom: 76px;
 }
 
 .page-name__title {
+  width: 260px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
   .bold-fonts(27px; 30px; @black);
+  .no-outline;
+}
+
+@media @tablet-width {
+  .page-name {
+    padding-top: 95px;
+    padding-bottom: 78px;
+  }
+
+  .page-name__title {
+    width: 668px;
+    padding-left: 50px;
+    padding-right: 50px;
+    .bold-fonts(43px; 50px; @black);
+  }
+}
+
+@media @desktop-width {
+    .page-name {
+      font-family: @main-font;
+      background-color: @bg-gray;
+      padding-top: 94px;
+      padding-bottom: 100px;
+    }
+
+    .page-name__title {
+      width: 700px;
+      padding-left: 225px;
+      padding-right: 225px;
+      text-align: center;
+      .bold-fonts(53px; 57px; @black);
+      .no-outline;
+    }
 }
