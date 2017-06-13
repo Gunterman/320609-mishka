@@ -266,14 +266,16 @@
     }
   }
   .product-card--video .product-card__info {
+    box-sizing: content-box;
     display: block;
-    width: 360px;
+    width: 368px - 76px;
     padding: 0 0 0 76px;
     margin-top: 0;
     margin-bottom: 0;
     margin-right: auto;
     order: 3;
     align-self: flex-end;
+    .no-outline;
   }
 
   .product-card__interactive {
@@ -290,7 +292,7 @@
   }
 
   .product-card--video .product-card__purchase {
-    width: 368px - 80px;
+    width: 368px - 78px;
     padding: 0;
     padding-left: 78px;
     margin-top: 4px;
