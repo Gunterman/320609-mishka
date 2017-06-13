@@ -4,31 +4,26 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/normalize.css">
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__logo">
-        <a href="index.html"><img src="http://placehold.it/150x100" width="150" height="150" alt="Мишка"></a>
-      </div>
-      <span class="main-nav__toogler"></span>
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
+      <div class="page-header__wrapper">
+        <div class="page-header__logo">
+          <a href="index.html"><img src="#" width="85" height="35" alt="Мишка"></a>
+        </div>
+        <button class="page-header__toggle" type="button">Открыть меню</button>
+        <nav class="main-nav">
           <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a href="#">Каталог товаров</a>
-              <ul class="main-nav__list main-nav__list--catalog">
-                <li class="main-nav__item"><a href="#">Новые поступления</a></li>
-                <li class="main-nav__item"><a href="#">Распродажа</a></li>
-              </ul>
-            </li>
-            <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
+            <li class="main-nav__item main-nav__item--catalog"><a>Каталог товаров</a></li>
+            <li class="main-nav__item main-nav__item--form"><a href="form.html">Вязание на заказ</a></li>
             <li class="main-nav__item main-nav__item--search"><a href="#" title="Поиск по сайту">Поиск по сайту</a></li>
             <li class="main-nav__item main-nav__item--currently-select"><a href="#">Корзина: пока пуста</a></li>
             <li class="main-nav__item main-nav__item--delivery">Бесплатная доставка по России</li>
+            <li class="main-nav__item main-nav__item--new main-nav__item--hidden"><a href="#">Новые поступления</a></li>
+            <li class="main-nav__item main-nav__item--sale main-nav__item--hidden"><a href="#">Распродажа</a></li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
     <section class="page-name">
       <h1 class="page-name__title">Каталог товаров</h1>
@@ -36,70 +31,68 @@
     <main class="catalog">
       <article class="product-card">
         <div class="product-card__image">
-          <a class="product-card__image-link"><img src="img/photo-1-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик"></a>
+          <a class="product-card__image-link" href="#"><img src="img/photo-1-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик"></a>
         </div>
         <div class="product-card__info">
-          <h1 class="product-card__title">Зайчик-попрыгайчик</h1>
+          <h1 class="product-card__title"><a href="#">Зайчик-попрыгайчик</a></h1>
           <span class="product-card__features">Рост 30 см, вес 200 г</span>
-        </div>
-        <div class="product-card__purchase">
-          <span class="product-card__price">1 200 руб.</span>
-          <a href="#" class="product-card__buy-btn">Заказать</a>
+          <div class="product-card__purchase">
+            <span class="product-card__price">1 200 руб.</span>
+            <a href="#" class="product-card__buy-btn">Заказать</a>
+          </div>
         </div>
       </article>
       <article class="product-card">
         <div class="product-card__image">
-          <a class="product-card__image-link"><img src="img/photo-2-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик"></a>
+          <a class="product-card__image-link" href="#"><img src="img/photo-2-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик"></a>
         </div>
         <div class="product-card__info">
-          <h1 class="product-card__title">Корзинка для белья</h1>
+          <h1 class="product-card__title"><a href="#">Корзинка для белья</a></h1>
           <span class="product-card__features">Диаметр 15 см, высота 10 см</span>
-        </div>
-        <div class="product-card__purchase">
-          <span class="product-card__price">690 руб.</span>
-          <a href="#" class="product-card__buy-btn">Заказать</a>
+          <div class="product-card__purchase">
+            <span class="product-card__price">690 руб.</span>
+            <a href="#" class="product-card__buy-btn">Заказать</a>
+          </div>
         </div>
       </article>
       <article class="product-card">
         <div class="product-card__image">
-          <a class="product-card__image-link"><img src="img/photo-3-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик"></a>
+          <a class="product-card__image-link" href="#"><img src="img/photo-3-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик"></a>
         </div>
         <div class="product-card__info">
-          <h1 class="product-card__title">Большая корзинка для игрушек</h1>
+          <h1 class="product-card__title"><a href="#">Большая корзинка для игрушек</a></h1>
           <span class="product-card__features">Диаметр 30 см, высота 30см</span>
-        </div>
-        <div class="product-card__purchase">
-          <span class="product-card__price">1 500 руб.</span>
-          <a href="#" class="product-card__buy-btn">Заказать</a>
+          <div class="product-card__purchase">
+            <span class="product-card__price">1 500 руб.</span>
+            <a href="#" class="product-card__buy-btn">Заказать</a>
+          </div>
         </div>
       </article>
       <article class="product-card product-card--video">
-        <div class="product-card__name">
-          <h1 class="product-card__title">Процесс производства</h1>
-        </div>
+        <h1 class="product-card__title"><a href="#">Процесс производства</a></h1>
         <div class="product-card__interactive">
           <video class="product-card__video" width="260" height="150" src="#" poster="img/video-mobile@1x.jpg">Процесс производства</video>
         </div>
         <div class="product-card__info">
-          <span class="product-card__features">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</span>
+          <span class="product-card__prod-info">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</span>
         </div>
         <div class="product-card__purchase">
-          <a href="#" class="product-card__buy-btn btn">Сделать заказ</a>
+          <a href="#" class="product-card__buy-btn product-card__buy-btn--video btn">Сделать заказ</a>
         </div>
       </article>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <div class="page-footer__logo page-footer__logo--hidden">
-          <a href="index.html"><img src="http://placehold.it/150x100" width="150" height="150" alt="Мишка"></a>
+        <div class="page-footer__logo">
+          <a href="index.html"><img src="#" width="102" height="34" alt="Мишка"></a>
         </div>
         <div class="page-footer__social">
-          <a class="social‐link social‐link‐‐in" href="https://www.instagram.com">Мы в Инстаграме</a>
-          <a class="social‐link social‐link‐‐fb" href="https://www.facebook.com">Мы в Фейсбуке</a>
-          <a class="social‐link social‐link‐‐tw" href="https://www.twitter.com">Мы в Твитере</a>
+          <a class="social-link social‐link‐‐in" href="https://www.instagram.com">Мы в Инстаграме</a>
+          <a class="social-link social‐link‐‐fb" href="https://www.facebook.com">Мы в Фейсбуке</a>
+          <a class="social-link social‐link‐‐tw" href="https://www.twitter.com">Мы в Твитере</a>
         </div>
-        <div class="page‐footer__copyright">
-          <span class="page‐footer__copyright-title">Разработано</span>
+        <div class="page-footer__copyright">
+          <span class="page-footer__copyright-title">Разработано</span>
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">htmlacademy</a>
         </div>
       </div>
@@ -108,16 +101,14 @@
       <div class="modal-size-selector__wrapper">
         <h2 class="modal-size-selector__title">Добавить в корзину</h2>
         <form class="modal-size-selector__form" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset class="modal-size-selector__field">
-            <legend class="modal-size-selector__name">Выберите размер:</legend>
-            <label for="small">s</label>
-            <input type="radio" name="size" value="s" id="small">
-            <label for="medium">m</label>
-            <input type="radio" name="size" value="m" id="medium">
-            <label for="large">l</label>
-            <input type="radio" name="size" value="l" id="large">
-            <button class="modal-size-selector__btn btn" type="submit">Добавить</button>
-          </fieldset>
+          <h3 class="modal-size-selector__name">Выберите размер:</h3>
+          <label class="modal-size-selector__size btn" for="small">s</label>
+          <input type="radio" name="size" value="s" id="small">
+          <label class="modal-size-selector__size btn" for="medium">m</label>
+          <input type="radio" name="size" value="m" id="medium">
+          <label class="modal-size-selector__size btn" for="large">l</label>
+          <input type="radio" name="size" value="l" id="large">
+          <button class="modal-size-selector__btn btn" type="submit">Добавить</button>
         </form>
       </div>
     </section>

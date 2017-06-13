@@ -1,147 +1,50 @@
 /* Шрифты */
-/* Параграф */
-.paragraph-font() {
-  font-size: @paragraph-font-size;
-  font-weight: @paragraph-font-weight;
-  line-height: @paragraph-line-height;
-  color: #444444;
+.regular-fonts(@font-size; @line-height; @color) {
+  font-size: @font-size;
+  font-weight: 400;
+  line-height: @line-height;
+  color: @color;
 }
 
-.catalog-paragraph-font() {
-  font-size: @paragraph-font-size - 2px;
-  font-weight: @paragraph-font-weight - 6px;
-  line-height: @paragraph-line-height;
-  color: #444444;
+.bold-fonts(@font-size; @line-height; @color) {
+  font-size: @font-size;
+  font-weight: 700;
+  line-height: @line-height;
+  color: @color;
 }
 
-.form-paragraph-font() {
-  font-size: @paragraph-font-size - 2px;
-  font-weight: @paragraph-font-weight - 6px;
-  line-height: @paragraph-line-height;
-  color: #444444;
+.container() {
+  width: 320px;
+  margin: 0 auto;
+
+  @media @tablet-width {
+    width: 668px;
+  }
+
+  @media @desktop-width {
+    width: 1050px;
+  }
 }
 
-.catalog-price-font {
-  font-size: @paragraph-font-size - 2px;
-  font-weight: @paragraph-font-weight + 200;
-  line-height: @paragraph-line-height - 6px;
-  color: black;
+.absolute-center() {
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  margin: auto;
 }
 
-.features-table-font() {
-  font-size: @paragraph-font-size;
-  font-weight: @paragraph-font-weight;
-  line-height: @paragraph-line-height - 6px;
-  color: #444444;
+.no-outline() {
+  outline: 2px solid red;
 }
 
-/* Меню */
-.main-nav-font() {
-  font-size: @main-nav-font-size;
-  font-weight: @main-nav-font-weight;
-  line-height: @main-nav-line-height;
-  color: black;
-}
-
-/* Заголовок */
-.title-font() {
-  font-size: @title-font-size;
-  font-weight: @title-font-weight;
-  line-height: @title-line-height;
-  color: black;
-}
-
-.copyright-title-font() {
-  font-size: @title-font-size - 6px;
-  font-weight: @title-font-weight;
-  line-height: @title-line-height - 12px;
-  color: black;
-}
-
-.deal-title-font() {
-  font-size: @title-font-size - 7px;
-  font-weight: @title-font-weight;
-  line-height: @title-line-height - 10px;
-  color: @main-green;
-}
-
-.promo-title() {
-  font-size: @title-font-size + 2px;
-  font-weight: @title-font-weight;
-  line-height: @title-line-height;
-  color: black;
-}
-
-.page-title() {
-  font-size: @title-font-size + 2px;
-  font-weight: @title-font-weight;
-  line-height: @title-line-height;
-  color: black;
-}
-
-.product-card-title() {
-  font-size: @title-font-size - 8px;
-  font-weight: @title-font-weight;
-  line-height: @title-line-height - 6px;
-  color: black;
-}
-
-.form-title() {
-  font-size: @title-font-size - 8px;
-  font-weight: @title-font-weight;
-  line-height: @title-line-height - 14px;
-  text-transform: uppercase;
-  color: @main-green;
-}
-
-.label-title() {
-  font-size: @title-font-size - 8px;
-  font-weight: @title-font-weight;
-  line-height: @title-line-height - 13px;
-  color: black;
-}
-
-/* Копки */
-.btn-fonts() {
-  font-size: @btn-font-size;
-  font-weight: @btn-font-weight;
-  line-height: @btn-line-height;
-  text-transform: uppercase;
-  color: #444444;
-}
-
-.promo-btn-fonts() {
-  font-size: @btn-font-size + 1px;
-  font-weight: @btn-font-weight;
-  line-height: @btn-line-height + 4px;
-  color: white;
-}
-
-.product-btn-font() {
-  font-size: @btn-font-size - 1px;
-  font-weight: @btn-font-weight;
-  line-height: @btn-line-height;
-  color: #444444;
-}
-
-.product-price-font() {
-  font-size: @btn-font-size - 1px;
-  font-weight: @btn-font-weight;
-  line-height: @btn-line-height - 4px;
-  color: #444444;
-}
-
-.about-us-font() {
-  font-size: @paragraph-font-size + 2px;
-  font-weight: @paragraph-font-weight + 200;
-  line-height: @paragraph-line-height - 10px;
-  color: black;
-}
-
-.author-name-font() {
-  font-size: @paragraph-font-size + 2px;
-  font-weight: @paragraph-font-weight + 200;
-  line-height: @paragraph-line-height - 6px;
-  font-style: normal;
-  color: black;
+.visually-hidden() {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
