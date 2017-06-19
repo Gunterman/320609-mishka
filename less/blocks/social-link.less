@@ -1,8 +1,43 @@
 .social-link {
-  .no-outline;
   display: block;
   font-size: 0;
   width: 30px;
   height: 30px;
   margin:0 14px;
+}
+
+.social-link--insta {
+  background-image: url("../img/icon-insta.svg");
+  background-repeat: no-repeat;
+  background-position: 0px 5px;
+  &:hover {
+    background-image: url("../img/icon-insta-hover.svg");
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social-link--fb {
+  background-image: url("../img/icon-fb.svg");
+  background-repeat: no-repeat;
+  background-position: 5px 0px;
+  &:hover {
+    background-image: url("../img/icon-fb-hover.svg");
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social-link--tw {
+  background-image: url("../img/icon-twitter.svg");
+  background-repeat: no-repeat;
+  background-position: 1px 5px;
+  &:hover {
+    background-image: url("../img/icon-twitter-hover.svg");
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
