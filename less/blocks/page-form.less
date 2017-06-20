@@ -166,6 +166,7 @@
   margin-bottom: 15px;
   font-family: @main-font;
   .regular-fonts(17px; 18px; @main-gray);
+  outline: none;
   &::placeholder {
     color: @main-gray;
     opacity: 0.3;
@@ -175,6 +176,36 @@
   }
   &:focus {
     border-color: @main-green;
+  }
+}
+
+.page-form__phone-input,
+.page-form__email-input {
+  width: 220px;
+  padding-right: 40px;
+}
+
+.page-form__phone-input {
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: 96% 38%;
+  &:hover {
+    background-image: url("../img/icon-phone-hover.svg");
+  }
+  &:focus {
+    background-image: url("../img/icon-phone-hover.svg");
+  }
+}
+
+.page-form__email-input {
+  background-image: url("../img/icon-mail.svg");
+  background-repeat: no-repeat;
+  background-position: 98% 60%;
+  &:hover {
+    background-image: url("../img/icon-mail-hover.svg");
+  }
+  &:focus {
+    background-image: url("../img/icon-mail-hover.svg");
   }
 }
 
@@ -188,6 +219,7 @@
   border: 2px solid @black;
   font-family: @main-font;
   .regular-fonts(17px; 18px; @main-gray);
+  outline: none;
   &::placeholder {
     color: @main-gray;
     opacity: 0.3;
@@ -209,7 +241,7 @@
   .page-form__form {
     width: 100%;
     padding: 0;
-    padding-top: 52px;
+    padding-top: 38px;
     padding-bottom: 20px;
   }
 
@@ -426,9 +458,18 @@
 
   .page-form__phone-input,
   .page-form__email-input {
-    width: 501px - 16px;
+    width: 501px - 16px - 60px;
     padding-left: 16px;
     padding-bottom: 12px;
+    padding-right: 60px;
+  }
+
+  .page-form__phone-input {
+    background-position: 95% 48%;
+  }
+
+  .page-form__email-input {
+    background-position: 95% 70%;
   }
 
   .page-form__btn {
@@ -447,7 +488,7 @@
   .page-form__form {
     width: 100%;
     padding: 0;
-    padding-top: 102px;
+    padding-top: 82px;
     padding-bottom: 20px;
   }
 
@@ -499,7 +540,15 @@
 
   .page-form__phone-input,
   .page-form__email-input {
-    width: 700px - 16px;
+    width: 700px - 16px - 60px;
+  }
+
+  .page-form__phone-input {
+    background-position: 99% 48%;
+  }
+
+  .page-form__email-input {
+    background-position: 99% 69%;
   }
 
   .page-form__letter {
