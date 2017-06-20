@@ -37,6 +37,12 @@
 .contacts__email {
   color: @main-gray;
   border-bottom: 1px solid @main-green;
+  &:hover {
+    color: @main-green;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .contacts__map {
@@ -44,6 +50,17 @@
   min-width: 320px;
   height: 457px;
   margin: -3px auto 0;
+  background-image: url("../img/map-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 320px auto;
+}
+
+@media (min-width: 320px) and (min-resolution: 144dpi), (min-width: 320px) and (min-resolution: 2dppx) {
+  .contacts__map {
+    background-image: url("../img/map-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 .contacts__btn {
@@ -53,7 +70,7 @@
 
 @media @tablet-width {
   .contacts__wrapper {
-    padding-top: 31px;
+    padding-top: 21px;
     padding-bottom: 57px;
     margin: 0 auto;
     width: 768px;
@@ -112,6 +129,17 @@
     min-width: 320px;
     height: 457px;
     margin-top: 16px;
+    background-image: url("../img/map-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 768px auto;
+  }
+
+  @media (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 2dppx) {
+    .contacts__map {
+      background-image: url("../img/map-tablet@2x.jpg");
+      background-size: 768px auto;
+    }
   }
 
   .contacts__btn {
@@ -126,7 +154,7 @@
     width: 1050px;
     padding-left: 50px;
     padding-right: 50px;
-    padding-top: 46px;
+    padding-top: 31px;
     padding-bottom: 104px;
     flex-direction: row;
     flex-wrap: wrap;
@@ -170,6 +198,17 @@
     margin: 0;
     padding: 0;
     align-self: flex-start;
+    background-image: url("../img/map-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 525px auto;
+  }
+
+  @media (min-width: 1150px) and (min-resolution: 144dpi), (min-width: 1150px) and (min-resolution: 2dppx) {
+    .contacts__map {
+      background-image: url("../img/map-desktop@2x.jpg");
+      background-size: 525px auto;
+    }
   }
 
   .contacts__btn {

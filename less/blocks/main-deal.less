@@ -1,6 +1,5 @@
 .main-deal {
   font-family: @main-font;
-  border-bottom: 7px solid @border-gray;
   padding-bottom: 35px;
 }
 
@@ -16,11 +15,20 @@
 .main-deal__title {
   .bold-fonts(17px; 20px; @main-green);
   text-transform: uppercase;
-  margin-top: 63px;
+  margin-top: 62px;
   margin-bottom: -72px;
 }
 
 @media @tablet-width {
+  .main-deal {
+    margin-top: -12px;
+    border-top: 12px solid transparent;
+    border-image: url("../img/bg-zigzag-fill.svg") 18 1 repeat;
+    position: relative;
+    z-index: 2;
+    padding-bottom: 52px;
+  }
+
   .main-deal__wrapper {
     width: 668px;
     padding-left: 50px;
@@ -39,6 +47,13 @@
 }
 
 @media @desktop-width {
+  .main-deal {
+    margin-top: -17px;
+    border-top: 17px solid transparent;
+    border-image: url("../img/bg-zigzag-fill.svg") 43% 1 repeat;
+    padding-bottom: 73px;
+  }
+
   .main-deal__wrapper {
     width: 1050px;
     padding-left: 50px;
