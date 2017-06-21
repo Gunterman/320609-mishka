@@ -20,7 +20,9 @@
   flex-direction: column;
   align-items: center;
   margin: auto;
-  height: 336px;
+  padding-top: 11px;
+  padding-bottom: 0px;
+  height: 326px;
   background-color: @white;
   border-top: 1px solid #c7c7c7;
   box-shadow: 0px 15px 25px 0px @border-gray;
@@ -36,6 +38,8 @@
 
 .modal-size-selector__name {
   .regular-fonts(15px; 30px; @main-gray);
+  margin-top: 10px;
+  margin-bottom: 24px;
 }
 
 .modal-size-selector__size {
@@ -60,15 +64,25 @@
   width: 100%;
 }
 
-.modal-size-selector__size {
+.modal-size-selector__input + .modal-size-selector__size {
   display: block;
   width: 78px;
   height: 16px;
   padding: 16px 0 16px;
   margin: 0;
+  border-color: rgba(68, 68, 68, 0.1);
+  &:hover {
+    background-color: transparent;
+    border-color: rgba(68, 68, 68, 0.3);
+    color: @black;
+  }
 }
 
-.modal-size-selector__form input {
+.modal-size-selector__input:checked + .modal-size-selector__size {
+  border-color: @main-green;
+}
+
+.modal-size-selector__input {
   display: none;
 }
 
@@ -79,4 +93,44 @@
   background-color: @main-green;
   border: none;
   margin-top: 31px;
+  padding-top: 19px;
+  padding-bottom: 17px;
+}
+
+
+@media @tablet-width {
+  .modal-size-selector__wrapper {
+    width: 566px;
+    border: 1px solid #c7c7c7;
+    padding-top: 10px;
+  }
+
+  .modal-size-selector__title {
+    width: 100%;
+    .bold-fonts(30px; 57px; @black);
+  }
+
+  .modal-size-selector__name {
+    .regular-fonts(17px, 30px, @main-gray);
+    margin-top: 12px;
+    margin-bottom: 21px;
+  }
+
+
+  .modal-size-selector__form {
+    width: 350px;
+  }
+
+  .modal-size-selector__input + .modal-size-selector__size {
+    display: block;
+    width: 108px;
+    height: 16px;
+    padding: 16px 0 16px;
+    margin: 0;
+    border-color: rgba(68, 68, 68, 0.1);
+  }
+
+  .modal-size-selector__btn {
+    width: 350px;
+  }
 }
