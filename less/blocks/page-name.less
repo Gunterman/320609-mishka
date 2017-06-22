@@ -1,53 +1,56 @@
 .page-name {
-  font-family: @main-font;
-  background-color: @bg-gray;
   padding-top: 70px;
   padding-bottom: 76px;
   border-top: 1px solid @border-gray;
+  background-color: @bg-gray;
+  font-family: @main-font;
 }
 
 .page-name__title {
-  width: 260px;
   margin: 0 auto;
-  padding-left: 30px;
   padding-right: 30px;
+  padding-left: 30px;
+  width: 260px;
   text-align: center;
+
   .bold-fonts(27px; 30px; @black);
 }
 
 @media @tablet-width {
   .page-name {
+    margin-top: -42px;
     padding-top: 95px;
     padding-bottom: 68px;
-    margin-top: -42px;
-    border-top: 1px solid @border-gray;
+    border-top: none;
     border-bottom: 24px solid transparent;
     border-image: url("../img/bg-zigzag-fill.svg") 100% 1 repeat;
   }
 
   .page-name__title {
-    width: 668px;
-    padding-left: 50px;
     padding-right: 50px;
+    padding-left: 50px;
+    width: 668px;
+
     .bold-fonts(43px; 50px; @black);
   }
 }
 
 @media @desktop-width {
-    .page-name {
-      font-family: @main-font;
-      background-color: @bg-gray;
-      padding-top: 94px;
-      padding-bottom: 85px;
-      border-bottom: 34px solid transparent;
-      border-image: url("../img/bg-zigzag-fill.svg") 100% 1 repeat;
-    }
+  .page-name {
+    padding-top: 94px;
+    padding-bottom: 85px;
+    border-bottom: 34px solid transparent;
+    border-image: url("../img/bg-zigzag-fill.svg") 100% 1 repeat;
+    background-color: @bg-gray;
+    font-family: @main-font;
+  }
 
-    .page-name__title {
-      width: 700px;
-      padding-left: 225px;
-      padding-right: 225px;
-      text-align: center;
-      .bold-fonts(53px; 57px; @black);
-    }
+  .page-name__title {
+    padding-right: 225px;
+    padding-left: 225px;
+    width: 700px;
+    text-align: center;
+
+    .bold-fonts(53px; 57px; @black);
+  }
 }

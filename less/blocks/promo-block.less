@@ -1,19 +1,19 @@
 .promo-block {
+  border-top: 1px solid @border-gray;
   background-color: #fafafa;
   font-family: @main-font;
-  border-top: 1px solid @border-gray;
 }
 
 .promo-block__wrapper {
-  min-height: 488px;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 488px;
   background-image: url(../img/hero-mobile@1x.jpg);
   background-position: center -19px;
-  background-repeat: no-repeat;
   background-size: 575px auto;
+  background-repeat: no-repeat;
 }
 
 @media (min-width: 320px) and (min-resolution: 144dpi), (min-width: 320px) and (min-resolution: 2dppx) {
@@ -24,26 +24,30 @@
 }
 
 .promo-block__title {
-  margin-top: 70px;
   display: block;
+  display: block;
+  margin-top: 70px;
+  margin-bottom: 90px;
   width: 216px;
   text-align: center;
+
   .bold-fonts(27px; 30px; @black);
 }
 
 .promo-block__nav {
-  margin: auto 0 0 0;
-  padding: 0;
   display: flex;
   flex-direction: column;
-  list-style: none;
+  margin: auto 0 0 0;
+  padding: 0;
   width: 100%;
+  list-style: none;
 }
 
 .promo-block__btn {
-  .bold-fonts(19px; 24px; @white);
-  background-color: @main-green;
   width: 100%;
+  background-color: @main-green;
+
+  .bold-fonts(19px; 24px; @white);
   &:hover {
     margin-top: -5px;
   }
@@ -57,19 +61,19 @@
 }
 
 .promo-block__btn a {
-  display: block;
-  color: @white;
-  width: 130px;
-  padding: 26px 160px 29px 30px;
-  margin: 0 auto;
   position: relative;
+  display: block;
+  margin: 0 auto;
+  padding: 26px 160px 29px 30px;
+  width: 130px;
+  color: @white;
   &::after {
-    content: "";
     position: absolute;
-    right: 36px;
     top: 23px;
+    right: 36px;
     width: 41px;
     height: 61px;
+    content: "";
   }
   &:hover {
     padding-bottom: 34px;
@@ -83,6 +87,7 @@
 .promo-block__btn--interior a {
   &::after {
     background-image: url(../img/icon-interior.svg);
+    background-size: 41px 62px;
     background-repeat: no-repeat;
     opacity: 0.5;
   }
@@ -94,6 +99,7 @@
     right: 26px;
     width: 61px;
     background-image: url(../img/icon-toy.svg);
+    background-size: 61px 61px;
     background-repeat: no-repeat;
     opacity: 0.5;
   }
@@ -102,22 +108,25 @@
 @media @tablet-width {
   .promo-block {
     margin-top: -42px;
+    border-top: none;
   }
 
   .promo-block__title {
-    width: 510px;
     margin-top: 154px;
+    margin-bottom: 370px;
+    width: 510px;
+
     .bold-fonts(43px; 50px; @black);
   }
 
   .promo-block__wrapper {
+    margin: 0 auto;
     min-height: 745px;
     width: 668px;
-    margin: 0 auto;
     background-image: url(../img/hero-desktop@1x.jpg);
     background-position: center 0px;
-    background-repeat: no-repeat;
     background-size: 1150px auto;
+    background-repeat: no-repeat;
   }
 
   @media (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 2dppx) {
@@ -136,8 +145,8 @@
   }
 
   .promo-block__btn a {
-    padding: 29px 169px 30px 36px;
     margin: 0;
+    padding: 29px 169px 30px 36px;
   }
 
   .promo-block__btn--interior a {
@@ -157,14 +166,15 @@
 @media @desktop-width {
   .promo-block {
     margin-top: -43px;
+    border-top: none;
   }
 
   .promo-block__wrapper {
+    margin: 0 auto;
     min-height: 745px;
     width: 1050px;
-    margin: 0 auto;
-    background-size: 1250px auto;
     background-position: center -32px;
+    background-size: 1250px auto;
   }
 
   @media (min-width: 1150px) and (min-resolution: 144dpi), (min-width: 1150px) and (min-resolution: 2dppx) {
@@ -175,8 +185,10 @@
   }
 
   .promo-block__title {
-    width: 700px;
     margin-top: 154px;
+    margin-bottom: 359px;
+    width: 700px;
+
     .bold-fonts(53px; 57px; @black);
   }
 
