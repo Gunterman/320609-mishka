@@ -1,73 +1,78 @@
 .main-deal {
-  font-family: @main-font;
   padding-bottom: 35px;
+  font-family: @main-font;
 }
 
 .main-deal__wrapper {
-  width: 260px;
-  padding-left: 30px;
-  padding-right: 30px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
+  padding-right: 30px;
+  padding-left: 30px;
+  width: 260px;
 }
 
 .main-deal__title {
-  .bold-fonts(17px; 20px; @main-green);
-  text-transform: uppercase;
   margin-top: 62px;
   margin-bottom: -72px;
+  text-transform: uppercase;
+
+  .bold-fonts(17px; 20px; @main-green);
 }
 
 @media @tablet-width {
   .main-deal {
-    margin-top: -12px;
-    border-top: 12px solid transparent;
-    border-image: url("../img/bg-zigzag-fill.svg") 18 1 repeat;
     position: relative;
     z-index: 2;
+    margin-top: -12px;
+    padding-top: 57px;
     padding-bottom: 52px;
+    border-top: 12px solid transparent;
+    border-image: url("../img/bg-zigzag-fill.svg") 18 1 repeat;
   }
 
   .main-deal__wrapper {
-    width: 668px;
-    padding-left: 50px;
-    padding-right: 50px;
     flex-direction: column;
+    padding-right: 50px;
+    padding-left: 50px;
+    width: 668px;
   }
 
   .main-deal__title {
-    width: 70px;
     align-self: flex-end;
-    .bold-fonts(17px; 17px; @main-green);
-    text-align: center;
-    margin-top: 0px;
     margin: 57px 28px -75px 0;
+    margin-top: 0px;
+    width: 70px;
+    text-align: center;
+
+    .bold-fonts(17px; 17px; @main-green);
   }
 }
 
 @media @desktop-width {
   .main-deal {
     margin-top: -17px;
+    padding-top: 0px;
+    padding-bottom: 73px;
     border-top: 17px solid transparent;
     border-image: url("../img/bg-zigzag-fill.svg") 43% 1 repeat;
-    padding-bottom: 73px;
   }
 
   .main-deal__wrapper {
-    width: 1050px;
-    padding-left: 50px;
-    padding-right: 50px;
     flex-direction: row;
+    padding-right: 50px;
+    padding-left: 50px;
+    width: 1050px;
   }
 
   .main-deal__title {
-    width: 70px;
-    padding-left: 47px;
-    padding-right: 58px;
     align-self: flex-start;
-    .bold-fonts(17px; 17px; @main-green);
-    text-align: center;
     margin: 139px 0 0 0;
+    padding-right: 58px;
+    padding-left: 47px;
+    width: 70px;
+    text-align: center;
+
+    .bold-fonts(17px; 17px; @main-green);
   }
 }
